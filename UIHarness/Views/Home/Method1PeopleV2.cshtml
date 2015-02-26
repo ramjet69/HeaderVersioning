@@ -1,0 +1,82 @@
+﻿@model UIHarness.Models.PeopleVM2
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<style>
+    .MethodBox {
+        border: 2px solid;
+        padding: 10px;
+    }
+</style>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>People Version 2</title>
+</head>
+<body>
+    <div class="MethodBox">
+        <h1>Method 1</h1>
+        <div>
+            <h4>PeopleVM</h4>
+            <hr />
+            <dl class="dl-horizontal"></dl>
+        </div>
+    <table>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Url
+            </th>
+            <th>
+                TelePhone
+            </th>
+            <th>
+                Mobile
+            </th>
+            <th>
+                Website
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model.People)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Url)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telephone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mobile)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Website)
+                </td>
+            </tr>
+        }
+    </table>
+        </div>
+</body>
+</html>

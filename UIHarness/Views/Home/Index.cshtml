@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<style>
+    
+     .MethodBox
+     {
+         border: 2px solid;
+         padding: 10px;
+     }
+</style>
+
+<html>
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <meta name="viewport" content="width=device-width" />
+        <title>Home</title>
+        <link href="Content/bootstrap.min.css" rel="stylesheet"/>
+        <script src="Scripts/jquery-1.10.2.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/handlebars-v1.1.2.js"></script>
+    </head>
+
+<body>
+<div class="MethodBox">
+    <h1>Method 1</h1>
+    <div>
+        <h4>People V1</h4>
+        @Html.ActionLink("Click", "Method1PeopleV1")
+    </div>
+
+    <div>
+        <h4>People V2</h4>
+        @Html.ActionLink("Click", "Method1PeopleV2")
+    </div>
+</div>
+
+    <div class="MethodBox">
+        <h1>Method 2</h1>
+        <div>
+            <h4>People V1</h4>
+            @Html.ActionLink("Click", "Method2")
+        </div>
+
+        <div>
+            <h4>People V2</h4>
+            @Html.ActionLink("Click", "Method22")
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
